@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UP Instalações Elétricas - Energia que conecta, soluções que duram</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        up: {
+                            black: '#0a0a0a',
+                            dark: '#121212',
+                            card: '#18181b',
+                            gold: '#FFC700',
+                            yellow: '#FFD700',
+                            amber: '#F59E0B',
+                            silver: '#E2E8F0',
+                            gray: '#27272a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF5C0 0%, #FFD700 40%, #FFA800 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .silver-gradient-text {
+            background: linear-gradient(135deg, #FFFFFF 0%, #CBD5E1 50%, #94A3B8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-gold {
+            background: linear-gradient(135deg, #FFD700 0%, #F59E0B 100%);
+        }
+        .glow-gold {
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+        }
+        .glow-gold:hover {
+            box-shadow: 0 0 35px rgba(255, 215, 0, 0.5);
+        }
+        .bg-grid-pattern {
+            background-size: 32px 32px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-up-black text-slate-100 font-sans antialiased selection:bg-up-gold selection:text-black">
+
+    <!-- Topbar Informativo com Acesso Direto aos Contatos -->
+    <div class="bg-up-dark border-b border-up-gray text-xs sm:text-sm py-2.5 px-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-2 text-slate-300 font-medium">
+                <span class="inline-flex items-center gap-1 text-up-gold font-bold"><i data-lucide="zap" class="w-4 h-4 fill-up-gold"></i> UP INSTALAÇÕES ELÉTRICAS:</span>
+                <span class="hidden sm:inline">Energia que conecta, soluções que duram</span>
+            </div>
+            
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/5551989710010?text=Ol%C3%A1%20Gabriel!%20Encontrei%20seu%20contato%20no%20site%20da%20UP%20Instala%C3%A7%C3%B5es%20El%C3%A9tricas." target="_blank" rel="noopener noreferrer" class="bg-up-card border border-up-gold/30 hover:border-up-gold text-slate-200 hover:text-up-gold px-3 py-1 rounded-lg flex items-center gap-1.5 transition-colors text-xs font-semibold">
+                    <i data-lucide="phone" class="w-3.5 h-3.5 text-up-gold"></i> Gabriel: (51) 98971-0010
+                </a>
+                <a href="https://wa.me/5551993999263?text=Ol%C3%A1%20Magno!%20Encontrei%20seu%20contato%20no%20site%20da%20UP%20Instala%C3%A7%C3%B5es%20El%C3%A9tricas." target="_blank" rel="noopener noreferrer" class="bg-up-card border border-up-gold/30 hover:border-up-gold text-slate-200 hover:text-up-gold px-3 py-1 rounded-lg flex items-center gap-1.5 transition-colors text-xs font-semibold">
+                    <i data-lucide="phone" class="w-3.5 h-3.5 text-up-gold"></i> Magno: (51) 99399-9263
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar Principal -->
+    <header class="bg-up-black/95 backdrop-blur-md border-b border-up-gray/80 sticky top-[41px] z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo UP -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-gold p-0.5 shadow-lg shadow-up-gold/20 group-hover:scale-105 transition-transform">
+                    <div class="w-full h-full bg-up-black rounded-[14px] flex items-center justify-center border border-up-gold/40">
+                        <span class="text-2xl font-black italic tracking-tighter text-up-gold">UP</span>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-xl font-black tracking-tight text-white block leading-none">INSTALAÇÕES <span class="text-up-gold">ELÉTRICAS</span></span>
+                    <span class="text-[10px] tracking-widest text-slate-400 uppercase font-semibold">Residencial & Empresarial</span>
+                </div>
+            </a>
+
+            <!-- Menu Desktop -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-slate-300 text-sm">
+                <a href="#inicio" class="hover:text-up-gold transition-colors">Início</a>
+                <a href="#servicos" class="hover:text-up-gold transition-colors">Serviços</a>
+                <a href="#diferenciais" class="hover:text-up-gold transition-colors">Diferenciais</a>
+                <a href="#calculadora" class="hover:text-up-gold transition-colors">Calculadora & Orçamento</a>
+                <a href="#faq" class="hover:text-up-gold transition-colors">FAQ</a>
+            </nav>
+
+            <!-- Ações Header -->
+            <div class="hidden sm:flex items-center gap-3">
+                <button onclick="openWhatsAppModal()" class="bg-gradient-gold hover:bg-yellow-400 text-up-black font-extrabold px-5 py-2.5 rounded-xl shadow-lg transition-all text-sm flex items-center gap-2 glow-gold">
+                    <i data-lucide="message-circle" class="w-4 h-4 fill-up-black"></i> Chamar no WhatsApp
+                </button>
+            </div>
+
+            <!-- Botão Menu Mobile -->
+            <button id="mobileMenuBtn" class="lg:hidden text-slate-300 hover:text-white p-2 focus:outline-none" aria-label="Abrir Menu">
+                <i data-lucide="menu" class="w-7 h-7" id="menuIcon"></i>
+            </button>
+        </div>
+
+        <!-- Menu Mobile Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-up-card border-b border-up-gray px-4 pt-2 pb-6 space-y-3">
+            <a href="#inicio" class="block py-2 text-slate-300 hover:text-up-gold font-medium border-b border-up-gray/50">Início</a>
+            <a href="#servicos" class="block py-2 text-slate-300 hover:text-up-gold font-medium border-b border-up-gray/50">Serviços</a>
+            <a href="#diferenciais" class="block py-2 text-slate-300 hover:text-up-gold font-medium border-b border-up-gray/50">Diferenciais</a>
+            <a href="#calculadora" class="block py-2 text-slate-300 hover:text-up-gold font-medium border-b border-up-gray/50">Calculadora de Consumo</a>
+            <a href="#faq" class="block py-2 text-slate-300 hover:text-up-gold font-medium border-b border-up-gray/50">FAQ</a>
+            <div class="pt-2 grid grid-cols-2 gap-2">
+                <a href="https://wa.me/5551989710010?text=Ol%C3%A1%20Gabriel!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="text-center bg-up-black border border-up-gold text-up-gold font-bold py-2.5 rounded-xl text-xs flex items-center justify-center gap-1">
+                    <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Gabriel
+                </a>
+                <a href="https://wa.me/5551993999263?text=Ol%C3%A1%20Magno!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="text-center bg-up-black border border-up-gold text-up-gold font-bold py-2.5 rounded-xl text-xs flex items-center justify-center gap-1">
+                    <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Magno
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative pt-12 pb-20 overflow-hidden bg-grid-pattern">
+        <!-- Luzes e Degradês de Fundo -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-up-gold/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-up-card border border-up-gold/40 text-up-gold text-xs sm:text-sm font-bold shadow-md">
+                        <i data-lucide="zap" class="w-4 h-4 fill-up-gold"></i>
+                        ENERGIA QUE CONECTA, SOLUÇÕES QUE DURAM
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
+                        <span class="gold-gradient-text">INSTALAÇÕES ELÉTRICAS</span> <br>
+                        <span class="silver-gradient-text">DE ALTA PRECISÃO</span>
+                    </h1>
+                    
+                    <p class="text-slate-300 text-lg sm:text-xl font-medium max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        SOLUÇÕES COMPLETAS PARA SUA RESIDÊNCIA OU EMPRESA! Atendimento especializado com foco total em eficiência, norma técnica e segurança.
+                    </p>
+
+                    <!-- Cards de Contato Direto com Gabriel e Magno -->
+                    <div class="pt-4 grid sm:grid-cols-2 gap-4 max-w-xl mx-auto lg:mx-0">
+                        <div class="bg-up-card border border-up-gold/40 hover:border-up-gold p-4 rounded-2xl transition-all shadow-xl flex items-center justify-between group">
+                            <div class="text-left">
+                                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block">Eletricista / Técnico</span>
+                                <p class="text-lg font-black text-white">GABRIEL</p>
+                                <p class="text-xs text-up-gold font-bold">(51) 98971-0010</p>
+                            </div>
+                            <button onclick="sendDirectWhatsApp('5551989710010', 'Gabriel')" class="bg-gradient-gold p-3 rounded-xl text-up-black font-extrabold hover:scale-105 transition-transform flex items-center justify-center gap-1.5 shadow-md">
+                                <i data-lucide="message-circle" class="w-5 h-5 fill-up-black"></i>
+                            </button>
+                        </div>
+
+                        <div class="bg-up-card border border-up-gold/40 hover:border-up-gold p-4 rounded-2xl transition-all shadow-xl flex items-center justify-between group">
+                            <div class="text-left">
+                                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block">Eletricista / Técnico</span>
+                                <p class="text-lg font-black text-white">MAGNO</p>
+                                <p class="text-xs text-up-gold font-bold">(51) 99399-9263</p>
+                            </div>
+                            <button onclick="sendDirectWhatsApp('5551993999263', 'Magno')" class="bg-gradient-gold p-3 rounded-xl text-up-black font-extrabold hover:scale-105 transition-transform flex items-center justify-center gap-1.5 shadow-md">
+                                <i data-lucide="message-circle" class="w-5 h-5 fill-up-black"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Garantias do Folheto -->
+                    <div class="pt-6 border-t border-up-gray/80 grid grid-cols-3 gap-2 text-center">
+                        <div class="p-2 rounded-xl bg-up-card/60 border border-up-gray/60">
+                            <i data-lucide="shield-check" class="w-6 h-6 text-up-gold mx-auto mb-1"></i>
+                            <span class="text-xs font-bold text-white uppercase block">Segurança</span>
+                        </div>
+                        <div class="p-2 rounded-xl bg-up-card/60 border border-up-gray/60">
+                            <i data-lucide="zap" class="w-6 h-6 text-up-gold mx-auto mb-1"></i>
+                            <span class="text-xs font-bold text-white uppercase block">Qualidade</span>
+                        </div>
+                        <div class="p-2 rounded-xl bg-up-card/60 border border-up-gray/60">
+                            <i data-lucide="settings" class="w-6 h-6 text-up-gold mx-auto mb-1"></i>
+                            <span class="text-xs font-bold text-white uppercase block">Confiança</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário Rápido com Envio via WhatsApp Direto -->
+                <div class="lg:col-span-5">
+                    <div class="bg-up-card border-2 border-up-gold/60 p-6 sm:p-8 rounded-3xl shadow-2xl relative">
+                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-up-gold text-up-black font-black text-xs px-4 py-1 rounded-full uppercase tracking-widest shadow-lg">
+                            Orçamento Instantâneo
+                        </div>
+
+                        <h3 class="text-xl font-black text-white mb-2 text-center mt-2">
+                            SOLICITAR SERVIÇO AGORA
+                        </h3>
+                        <p class="text-slate-400 text-xs text-center mb-6">Preencha e envie a mensagem pré-formatada diretamente pelo WhatsApp!</p>
+                        
+                        <form id="heroQuickForm" onsubmit="handleHeroQuickSubmit(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 mb-1">Seu Nome</label>
+                                <input type="text" id="heroName" required placeholder="Ex: João Silva" class="w-full bg-up-black border border-up-gray rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-up-gold transition-colors">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 mb-1">Com quem deseja falar?</label>
+                                <select id="heroProfessional" class="w-full bg-up-black border border-up-gray rounded-xl px-4 py-3 text-sm text-up-gold font-bold focus:outline-none focus:border-up-gold transition-colors">
+                                    <option value="5551989710010|Gabriel">Gabriel - (51) 98971-0010</option>
+                                    <option value="5551993999263|Magno">Magno - (51) 99399-9263</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 mb-1">Serviço Desejado</label>
+                                <select id="heroService" class="w-full bg-up-black border border-up-gray rounded-xl px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-up-gold transition-colors">
+                                    <option value="Automação Residencial">Automação Residencial</option>
+                                    <option value="Passagem de Cabos">Passagem de Cabos</option>
+                                    <option value="Instalação de Câmeras">Instalação de Câmeras</option>
+                                    <option value="Manutenção em Geral">Manutenção em Geral</option>
+                                    <option value="Infraestrutura">Infraestrutura</option>
+                                    <option value="Montagem de CD (Quadro de Distribuição)">Montagem de CD (Quadro de Distribuição)</option>
+                                    <option value="Outro Serviço">Outro Serviço Elétrico</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 mb-1">Cidade / Bairro</label>
+                                <input type="text" id="heroLocation" placeholder="Ex: Porto Alegre - Centro" class="w-full bg-up-black border border-up-gray rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-up-gold transition-colors">
+                            </div>
+
+                            <button type="submit" class="w-full bg-gradient-gold hover:bg-yellow-400 text-up-black font-extrabold py-4 rounded-xl transition-all shadow-xl flex items-center justify-center gap-2 glow-gold text-base">
+                                <i data-lucide="message-circle" class="w-5 h-5 fill-up-black"></i> Enviar pelo WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços Exatos do Folheto -->
+    <section id="servicos" class="py-20 bg-up-black border-t border-up-gray relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-black tracking-widest text-up-gold uppercase bg-up-card border border-up-gold/30 px-3 py-1 rounded-full">Especialidades UP</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white mt-4">NOSSOS SERVIÇOS ESPECIALIZADOS</h2>
+                <p class="text-slate-400 mt-2 text-sm sm:text-base">Confira as soluções oferecidas para deixar sua casa ou empresa protegida e moderna.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Serviço 1: Automação Residencial -->
+                <div class="bg-up-card border border-up-gray p-8 rounded-3xl hover:border-up-gold transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-up-gold/10 border border-up-gold/40 rounded-2xl flex items-center justify-center text-up-gold mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="zap" class="w-7 h-7 fill-up-gold"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-wide">Automação Residencial</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Projetos para controlar iluminação, tomadas, portões e cenários inteligentes com praticidade e economia no seu celular.</p>
+                    </div>
+                    <button onclick="requestServiceWhatsApp('Automação Residencial')" class="w-full bg-up-black border border-up-gold/40 hover:border-up-gold text-up-gold hover:bg-up-gold hover:text-up-black font-bold py-2.5 rounded-xl transition-all text-xs flex items-center justify-center gap-2">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i> Cotar Automação
+                    </button>
+                </div>
+
+                <!-- Serviço 2: Passagem de Cabos -->
+                <div class="bg-up-card border border-up-gray p-8 rounded-3xl hover:border-up-gold transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-up-gold/10 border border-up-gold/40 rounded-2xl flex items-center justify-center text-up-gold mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="cable" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-wide">Passagem de Cabos</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Lançamento e organização de fiação elétrica, cabos de rede e telefonia seguindo rigorosas normas técnicas.</p>
+                    </div>
+                    <button onclick="requestServiceWhatsApp('Passagem de Cabos')" class="w-full bg-up-black border border-up-gold/40 hover:border-up-gold text-up-gold hover:bg-up-gold hover:text-up-black font-bold py-2.5 rounded-xl transition-all text-xs flex items-center justify-center gap-2">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i> Cotar Passagem de Cabos
+                    </button>
+                </div>
+
+                <!-- Serviço 3: Instalação de Câmeras -->
+                <div class="bg-up-card border border-up-gray p-8 rounded-3xl hover:border-up-gold transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-up-gold/10 border border-up-gold/40 rounded-2xl flex items-center justify-center text-up-gold mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="camera" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-wide">Instalação de Câmeras</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Sistemas de CFTV, câmeras IP e monitoramento para proteger seu patrimônio com acesso remoto em tempo real.</p>
+                    </div>
+                    <button onclick="requestServiceWhatsApp('Instalação de Câmeras')" class="w-full bg-up-black border border-up-gold/40 hover:border-up-gold text-up-gold hover:bg-up-gold hover:text-up-black font-bold py-2.5 rounded-xl transition-all text-xs flex items-center justify-center gap-2">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i> Cotar Câmeras CFTV
+                    </button>
+                </div>
+
+                <!-- Serviço 4: Manutenção em Geral -->
+                <div class="bg-up-card border border-up-gray p-8 rounded-3xl hover:border-up-gold transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-up-gold/10 border border-up-gold/40 rounded-2xl flex items-center justify-center text-up-gold mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="wrench" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-wide">Manutenção em Geral</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Reparos de curtos, troca de tomadas, disjuntores, chuveiros, iluminação LED e revisão preventiva de fiações.</p>
+                    </div>
+                    <button onclick="requestServiceWhatsApp('Manutenção em Geral')" class="w-full bg-up-black border border-up-gold/40 hover:border-up-gold text-up-gold hover:bg-up-gold hover:text-up-black font-bold py-2.5 rounded-xl transition-all text-xs flex items-center justify-center gap-2">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i> Cotar Manutenção
+                    </button>
+                </div>
+
+                <!-- Serviço 5: Infraestrutura -->
+                <div class="bg-up-card border border-up-gray p-8 rounded-3xl hover:border-up-gold transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-up-gold/10 border border-up-gold/40 rounded-2xl flex items-center justify-center text-up-gold mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="building" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-wide">Infraestrutura</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Montagem de eletrocalhas, perfilados, eletrodutos e tubulações para galpões, escritórios e residências.</p>
+                    </div>
+                    <button onclick="requestServiceWhatsApp('Infraestrutura')" class="w-full bg-up-black border border-up-gold/40 hover:border-up-gold text-up-gold hover:bg-up-gold hover:text-up-black font-bold py-2.5 rounded-xl transition-all text-xs flex items-center justify-center gap-2">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i> Cotar Infraestrutura
+                    </button>
+                </div>
+
+                <!-- Serviço 6: Montagem de CD -->
+                <div class="bg-up-card border border-up-gray p-8 rounded-3xl hover:border-up-gold transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-up-gold/10 border border-up-gold/40 rounded-2xl flex items-center justify-center text-up-gold mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="sliders" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-wide">Montagem de CD</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Montagem e organização de Quadros de Distribuição, balanceamento de fases e instalação de proteção DR e DPS.</p>
+                    </div>
+                    <button onclick="requestServiceWhatsApp('Montagem de CD (Quadro de Distribuição)')" class="w-full bg-up-black border border-up-gold/40 hover:border-up-gold text-up-gold hover:bg-up-gold hover:text-up-black font-bold py-2.5 rounded-xl transition-all text-xs flex items-center justify-center gap-2">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i> Cotar Montagem de CD
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora e Gerador de Orçamento via WhatsApp -->
+    <section id="calculadora" class="py-20 bg-up-dark border-t border-up-gray relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-black tracking-widest text-up-gold uppercase bg-up-card border border-up-gold/30 px-3 py-1 rounded-full">Ferramenta Interativa</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white mt-4">SIMULADOR DE CONSUMO & ORÇAMENTO</h2>
+                <p class="text-slate-400 mt-2 text-sm">Calcule o consumo mensal dos seus equipamentos e envie a estimativa direto ao WhatsApp do técnico!</p>
+            </div>
+
+            <div class="bg-up-card border border-up-gray rounded-3xl p-6 sm:p-10 shadow-2xl">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Formulário de Entrada -->
+                    <div class="space-y-4">
+                        <h3 class="text-base font-bold text-white flex items-center gap-2 border-b border-up-gray pb-2">
+                            <i data-lucide="calculator" class="w-5 h-5 text-up-gold"></i> Dados do Equipamento
+                        </h3>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 mb-1">Selecione o Equipamento</label>
+                            <select id="calcDevice" onchange="updateCalcPreset()" class="w-full bg-up-black border border-up-gray rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-up-gold">
+                                <option value="7500">Chuveiro Elétrico Potente (7500W)</option>
+                                <option value="5500">Chuveiro Comum (5500W)</option>
+                                <option value="1200">Ar Condicionado 12.000 BTU (1200W)</option>
+                                <option value="2000">Ar Condicionado 18.000 BTU (2000W)</option>
+                                <option value="250">Geladeira / Freezer (250W)</option>
+                                <option value="1500">Ferro de Passar (1500W)</option>
+                                <option value="1000">Micro-ondas (1000W)</option>
+                                <option value="custom">Outro Aparelho (Digitar Potência)</option>
+                            </select>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 mb-1">Potência (Watts)</label>
+                                <input type="number" id="calcWatts" value="7500" oninput="calculateEnergy()" class="w-full bg-up-black border border-up-gray rounded-xl px-4 py-2 text-sm text-white focus:outline-none focus:border-up-gold">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 mb-1">Horas/Dia</label>
+                                <input type="number" id="calcHours" value="1" step="0.5" oninput="calculateEnergy()" class="w-full bg-up-black border border-up-gray rounded-xl px-4 py-2 text-sm text-white focus:outline-none focus:border-up-gold">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 mb-1">Dias no Mês</label>
+                                <input type="number" id="calcDays" value="30" max="31" oninput="calculateEnergy()" class="w-full bg-up-black border border-up-gray rounded-xl px-4 py-2 text-sm text-white focus:outline-none focus:border-up-gold">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 mb-1">Tarifa (R$/kWh)</label>
+                                <input type="number" id="calcTariff" value="0.85" step="0.05" oninput="calculateEnergy()" class="w-full bg-up-black border border-up-gray rounded-xl px-4 py-2 text-sm text-white focus:outline-none focus:border-up-gold">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resultado + Envio Direto -->
+                    <div class="bg-up-black border border-up-gray/80 rounded-2xl p-6 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400 block mb-2">Estimativa Mensal Calculada</span>
+                            
+                            <div class="space-y-4 mb-6">
+                                <div>
+                                    <span class="text-slate-400 text-xs">Consumo estimado:</span>
+                                    <p class="text-2xl font-black text-white" id="resKwh">225.00 <span class="text-sm text-up-gold font-normal">kWh/mês</span></p>
+                                </div>
+
+                                <div class="p-3.5 rounded-xl bg-up-card border border-up-gold/30">
+                                    <span class="text-slate-400 text-xs block mb-0.5">Custo estimado na conta:</span>
+                                    <p class="text-3xl font-black text-up-gold" id="resCost">R$ 191,25</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 pt-4 border-t border-up-gray">
+                            <label class="block text-xs font-bold text-slate-300">Enviar simulação para qual técnico?</label>
+                            <div class="grid grid-cols-2 gap-2">
+                                <button onclick="sendCalcToWhatsApp('5551989710010', 'Gabriel')" class="bg-up-card border border-up-gold hover:bg-up-gold hover:text-up-black text-up-gold font-bold py-2.5 rounded-xl transition-all text-xs flex items-center justify-center gap-1">
+                                    <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Gabriel
+                                </button>
+                                <button onclick="sendCalcToWhatsApp('5551993999263', 'Magno')" class="bg-up-card border border-up-gold hover:bg-up-gold hover:text-up-black text-up-gold font-bold py-2.5 rounded-xl transition-all text-xs flex items-center justify-center gap-1">
+                                    <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Magno
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ (Perguntas Frequentes) -->
+    <section id="faq" class="py-20 bg-up-black border-t border-up-gray relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-xs font-black tracking-widest text-up-gold uppercase bg-up-card border border-up-gold/30 px-3 py-1 rounded-full">Dúvidas Frequentes</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white mt-4">PERGUNTAS FREQUENTES</h2>
+            </div>
+
+            <div class="space-y-4" id="faqAccordion">
+                <div class="bg-up-card border border-up-gray rounded-2xl overflow-hidden">
+                    <button class="w-full text-left p-5 font-bold text-white flex justify-between items-center focus:outline-none faq-btn">
+                        <span>Como faço para solicitar um orçamento com a UP Instalações?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-up-gold transition-transform"></i>
+                    </button>
+                    <div class="px-5 pb-5 text-slate-300 text-sm hidden faq-content">
+                        Basta clicar nos botões de WhatsApp do site para falar direto com o Gabriel (51 98971-0010) ou com o Magno (51 99399-9262). Você pode mandar fotos, vídeos ou agendar uma visita técnica no local.
+                    </div>
+                </div>
+
+                <div class="bg-up-card border border-up-gray rounded-2xl overflow-hidden">
+                    <button class="w-full text-left p-5 font-bold text-white flex justify-between items-center focus:outline-none faq-btn">
+                        <span>Quais serviços de infraestrutura e montagem vocês realizam?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-up-gold transition-transform"></i>
+                    </button>
+                    <div class="px-5 pb-5 text-slate-300 text-sm hidden faq-content">
+                        Realizamos passagem de cabos, montagem e organização de quadros de distribuição (CD), instalação de CFTV/câmeras, automação residencial e manutenção elétrica em geral.
+                    </div>
+                </div>
+
+                <div class="bg-up-card border border-up-gray rounded-2xl overflow-hidden">
+                    <button class="w-full text-left p-5 font-bold text-white flex justify-between items-center focus:outline-none faq-btn">
+                        <span>Vocês atendem residências e empresas?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-up-gold transition-transform"></i>
+                    </button>
+                    <div class="px-5 pb-5 text-slate-300 text-sm hidden faq-content">
+                        Sim! Atendemos residências, apartamentos, comércios, escritórios e estruturas empresariais com total garantia e segurança.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé Completo -->
+    <footer class="bg-up-dark border-t border-up-gray text-slate-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-10 border-b border-up-gray">
+                
+                <div class="space-y-3">
+                    <div class="flex items-center gap-2">
+                        <span class="text-xl font-black tracking-tight text-white">UP <span class="text-up-gold">INSTALAÇÕES ELÉTRICAS</span></span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Energia que conecta, soluções que duram. Soluções completas para sua residência ou empresa!
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-3 uppercase tracking-wider">Contatos Diretos</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li>
+                            <a href="https://wa.me/5551989710010?text=Ol%C3%A1%20Gabriel!" target="_blank" rel="noopener noreferrer" class="hover:text-up-gold transition-colors flex items-center gap-2">
+                                <i data-lucide="phone" class="w-3.5 h-3.5 text-up-gold"></i> Gabriel: (51) 98971-0010
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/5551993999263?text=Ol%C3%A1%20Magno!" target="_blank" rel="noopener noreferrer" class="hover:text-up-gold transition-colors flex items-center gap-2">
+                                <i data-lucide="phone" class="w-3.5 h-3.5 text-up-gold"></i> Magno: (51) 99399-9263
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-3 uppercase tracking-wider">Garantias UP</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        ✔ SEGURANÇA | ✔ QUALIDADE | ✔ CONFIANÇA
+                    </p>
+                </div>
+            </div>
+
+            <div class="pt-6 text-center text-xs text-slate-500">
+                <p>&copy; 2026 UP Instalações Elétricas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <button onclick="openWhatsAppModal()" class="fixed bottom-6 right-6 z-50 bg-gradient-gold p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 flex items-center justify-center glow-gold group" aria-label="Falar pelo WhatsApp">
+        <i data-lucide="message-circle" class="w-7 h-7 text-up-black fill-up-black"></i>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-500 ease-in-out text-xs font-black text-up-black pl-0 group-hover:pl-2 uppercase">
+            Falar no WhatsApp
+        </span>
+    </button>
+
+    <!-- Modal de Escolha do Técnico para o WhatsApp -->
+    <div id="whatsappModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-up-card border-2 border-up-gold/80 rounded-3xl p-6 max-w-sm w-full relative shadow-2xl">
+            <button onclick="closeWhatsAppModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 bg-up-gold/20 border border-up-gold rounded-full flex items-center justify-center mx-auto mb-3">
+                    <i data-lucide="message-circle" class="w-6 h-6 text-up-gold fill-up-gold"></i>
+                </div>
+                <h3 class="text-lg font-black text-white">COM QUEM DESEJA FALAR?</h3>
+                <p class="text-xs text-slate-400 mt-1">Escolha um de nossos profissionais para iniciar o atendimento no WhatsApp:</p>
+            </div>
+
+            <div class="space-y-3">
+                <a href="https://wa.me/5551989710010?text=Ol%C3%A1%20Gabriel!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20UP%20Instala%C3%A7%C3%B5es%20El%C3%A9tricas." target="_blank" rel="noopener noreferrer" onclick="closeWhatsAppModal()" class="w-full bg-up-black border border-up-gold hover:bg-up-gold hover:text-up-black p-4 rounded-2xl flex items-center justify-between text-up-gold font-bold transition-all group">
+                    <div class="text-left">
+                        <span class="text-xs text-slate-400 block group-hover:text-up-black">Técnico / Eletricista</span>
+                        <span class="text-base font-extrabold text-white group-hover:text-up-black">GABRIEL</span>
+                    </div>
+                    <span class="text-xs font-mono bg-up-card group-hover:bg-up-black group-hover:text-up-gold px-2.5 py-1 rounded-lg border border-up-gold/30">(51) 98971-0010</span>
+                </a>
+
+                <a href="https://wa.me/5551993999263?text=Ol%C3%A1%20Magno!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20UP%20Instala%C3%A7%C3%B5es%20El%C3%A9tricas." target="_blank" rel="noopener noreferrer" onclick="closeWhatsAppModal()" class="w-full bg-up-black border border-up-gold hover:bg-up-gold hover:text-up-black p-4 rounded-2xl flex items-center justify-between text-up-gold font-bold transition-all group">
+                    <div class="text-left">
+                        <span class="text-xs text-slate-400 block group-hover:text-up-black">Técnico / Eletricista</span>
+                        <span class="text-base font-extrabold text-white group-hover:text-up-black">MAGNO</span>
+                    </div>
+                    <span class="text-xs font-mono bg-up-card group-hover:bg-up-black group-hover:text-up-gold px-2.5 py-1 rounded-lg border border-up-gold/30">(51) 99399-9263</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts JavaScript com Redirecionamento Garantido -->
+    <script>
+        // Inicializar Lucide Icons
+        lucide.createIcons();
+
+        // Menu Mobile Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Accordion FAQ Toggle
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('[data-lucide="chevron-down"]');
+                content.classList.toggle('hidden');
+                if (icon) {
+                    icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+                }
+            });
+        });
+
+        // Funções do Modal WhatsApp
+        function openWhatsAppModal() {
+            const modal = document.getElementById('whatsappModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeWhatsAppModal() {
+            const modal = document.getElementById('whatsappModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // Helper genérico para redirecionar de forma robusta para o WhatsApp
+        function redirectToWhatsApp(phone, textMessage) {
+            const encodedText = encodeURIComponent(textMessage);
+            const whatsappUrl = `https://wa.me/${phone}?text=${encodedText}`;
+            
+            // Tenta abrir numa nova aba
+            const newWindow = window.open(whatsappUrl, '_blank');
+            
+            // Fallback caso pop-ups sejam bloqueados
+            if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+                window.location.href = whatsappUrl;
+            }
+        }
+
+        // Envio Direto via Botão Simples
+        function sendDirectWhatsApp(phone, name) {
+            const text = `Olá ${name}! Encontrei seu contato no site da UP Instalações Elétricas e gostaria de solicitar um orçamento.`;
+            redirectToWhatsApp(phone, text);
+        }
+
+        // Envio do Formulário do Hero
+        function handleHeroQuickSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('heroName').value.trim();
+            const profVal = document.getElementById('heroProfessional').value.split('|');
+            const phone = profVal[0];
+            const profName = profVal[1];
+            const service = document.getElementById('heroService').value;
+            const location = document.getElementById('heroLocation').value.trim();
+
+            let message = `Olá ${profName}! Meu nome é ${name}.\n`;
+            message += `Gostaria de um orçamento para o serviço: *${service}*.\n`;
+            if (location) {
+                message += `Localização: ${location}\n`;
+            }
+            message += `Vim pelo site da *UP Instalações Elétricas*.`;
+
+            redirectToWhatsApp(phone, message);
+        }
+
+        // Envio de Solicitação de Serviço Específico
+        function requestServiceWhatsApp(serviceName) {
+            const message = `Olá! Gostaria de solicitar um orçamento para o serviço de *${serviceName}* com a *UP Instalações Elétricas*.`;
+            // Por padrão abre o modal para escolher o profissional
+            openWhatsAppModal();
+        }
+
+        // Lógica da Calculadora
+        function updateCalcPreset() {
+            const deviceSelect = document.getElementById('calcDevice');
+            const wattsInput = document.getElementById('calcWatts');
+            if (deviceSelect.value !== 'custom') {
+                wattsInput.value = deviceSelect.value;
+            }
+            calculateEnergy();
+        }
+
+        function calculateEnergy() {
+            const watts = parseFloat(document.getElementById('calcWatts').value) || 0;
+            const hours = parseFloat(document.getElementById('calcHours').value) || 0;
+            const days = parseFloat(document.getElementById('calcDays').value) || 0;
+            const tariff = parseFloat(document.getElementById('calcTariff').value) || 0;
+
+            const kwh = (watts * hours * days) / 1000;
+            const cost = kwh * tariff;
+
+            document.getElementById('resKwh').innerHTML = `${kwh.toFixed(2)} <span class="text-sm text-up-gold font-normal">kWh/mês</span>`;
+            document.getElementById('resCost').innerText = `R$ ${cost.toFixed(2).replace('.', ',')}`;
+        }
+
+        // Envio da Simulação da Calculadora para o WhatsApp
+        function sendCalcToWhatsApp(phone, profName) {
+            const watts = document.getElementById('calcWatts').value;
+            const hours = document.getElementById('calcHours').value;
+            const days = document.getElementById('calcDays').value;
+            const kwhText = document.getElementById('resKwh').innerText.replace('\n', ' ');
+            const costText = document.getElementById('resCost').innerText;
+
+            let message = `Olá ${profName}! Fiz uma simulação no site da *UP Instalações Elétricas*:\n\n`;
+            message += `• Potência: ${watts}W\n`;
+            message += `• Uso: ${hours}h/dia durante ${days} dias/mês\n`;
+            message += `• Consumo estimado: ${kwhText}\n`;
+            message += `• Custo estimado: ${costText}\n\n`;
+            message += `Gostaria de uma avaliação para melhorar a eficiência elétrica da minha estrutura!`;
+
+            redirectToWhatsApp(phone, message);
+        }
+
+        window.onload = function() {
+            calculateEnergy();
+        };
+    </script>
+</body>
+</html>
